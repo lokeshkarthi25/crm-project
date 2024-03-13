@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --color-default:#043758;
+    --color-second:#0067ac;
+    --color-white:white;
+    --color-body:#e4e9f7;
+    --color-light:#e0e0e0;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+max-height: 100vh;
+
+}
+
+.sidebar{
+    
+    width: 250px;
+    min-height: 100vh;
+    padding: 6px 5px;
+    z-index: 999;
+    background-color:var(--color-default);
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.sidebar .logo-detail{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sidebar .logo-detail{
+    color: rgb(212, 203, 203);
+    font-size: 22px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.sidebar .icon{
+    color: white;
+    height: 35px;
+    line-height: 60px;
+    min-width: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.sidebar .nav-list{
+    margin-top: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar li{
+    margin: 8px 0;
+    list-style: none;
+    
+}
+
+.sidebar li p{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--color-default);
+    transition: background-color 0.3s, color 0.3s,
+    transform 0.3s;
+    z-index: 12;
+
+}
+
+
+.link-name{
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+
+.sidebar li p:hover {
+    background-color: var(--color-second);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--color-white);
+    padding-left: 10px;
+}
+
+.sidebar li .icon{
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.profile{
+    position: fixed;
+    height: 60px;
+    width: 250px;
+    left: 0;
+    bottom: -8px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.sidebar .profile .profile-details{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-white);
+    white-space: nowrap;
+}

@@ -1,0 +1,48 @@
+.client table{
+       top: 200px;
+       position: absolute;
+       right: 40px;
+}
+
+
+.searchbox{
+       top: 90px;
+       position: absolute;
+       left: 280px;
+       
+}
+
+.customertable{
+       border-collapse: collapse;
+       margin: 25px 0px;
+       font-size: 20px;
+       min-width:160vh;
+       border-radius: 5px 5px 0 0;
+       overflow: hidden;
+       box-shadow: 0 0 20px rgba(0,0,0,0.7);
+       border-bottom:#0067ac ;
+}
+.customertable thead tr {
+       background-color: #0067ac;
+       font-weight: bold;
+}
+.customertable th,.customertable td{
+       padding: 12px 15px;
+}
+.customertable tbody tr{
+       border-bottom: 1px solid #dddddd;
+}
+.customertable tbody tr:nth-of-type(even){
+       background-color:rgb(227,231,232);
+}
+.header{
+       top: 230px;
+       position: absolute;
+       left: 290px;
+}
+.action:hover{
+       box-shadow: 0 0 10px rgba(0,0,0,0.7);
+     background-color:rgba(0, 0, 0, 0.123) ;
+     border-radius: -5px;
+     
+}
